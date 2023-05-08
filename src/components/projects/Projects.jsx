@@ -8,9 +8,13 @@ import {
   Link,
   ListItem,
   Icon,
-  List
+  List,
+
 } from '@chakra-ui/react'
+
 import { BsLinkedin, BsGithub, BsMailbox } from 'react-icons/bs'
+import Positions from '../Positions/Positions'
+
 
 const links = [
   {
@@ -33,28 +37,31 @@ const listItems = links.map((link) => (
   </ListItem>
 ))
 
-
 function Projects() {
   return (
     <section className="projects-section">
       <Tabs>
         <TabList>
           <Tab>Contact</Tab>
-          <Tab isDisabled>Positions (soon)</Tab>
+          <Tab>Positions</Tab>
+          <Tab isDisabled>Social (Soon)</Tab>
         </TabList>
         <TabPanels>
           <TabPanel>
-          <div className="find-me">
-            <List spacing={3}>
-              {listItems}
-              <ListItem>
-                <Icon as={BsMailbox} />{' '}
-                <a href="mailto:fcojavierdev@gmail.com">fcojavierdev@gmail.com </a>
-              </ListItem>
-            </List>
-          </div>
+            <section className="find-me">
+              <List spacing={3}>
+                {listItems}
+                <ListItem>
+                  <Icon as={BsMailbox} />{' '}
+                  <a href="mailto:fcojavierdev@gmail.com">
+                    fcojavierdev@gmail.com{' '}
+                  </a>
+                </ListItem>
+              </List>
+            </section>
           </TabPanel>
           <TabPanel>
+            <Positions/>
           </TabPanel>
         </TabPanels>
       </Tabs>
