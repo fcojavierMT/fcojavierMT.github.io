@@ -14,7 +14,7 @@ import {
   Box,
 } from '@chakra-ui/react'
 
-import { FaVuejs, FaReact, FaAngular, FaDocker, FaCss3 } from 'react-icons/fa'
+import { FaVuejs, FaReact, FaAngular, FaCss3 } from 'react-icons/fa'
 import { BsLinkedin, BsGithub, BsMailbox, BsFiletypeScss } from 'react-icons/bs'
 import { SiAstro } from 'react-icons/si'
 import Positions from '../Positions/Positions'
@@ -57,14 +57,6 @@ const listFronStack = [
     text: 'Scss',
     icon: BsFiletypeScss,
   },
-  {
-    text: 'Django',
-    icon: FaDocker,
-  },
-  {
-    text: 'Github',
-    icon: BsGithub,
-  },
 ]
 
 const listItems = links.map((link) => (
@@ -99,7 +91,7 @@ function Projects() {
               <List spacing={3}>
                 {listItems}
                 <ListItem>
-                  <Icon as={BsMailbox} />
+                  <Icon as={BsMailbox} className="icon-box-mail" />
                   <a href="mailto:fcojavierdev@gmail.com">
                     fcojavierdev@gmail.com
                   </a>
