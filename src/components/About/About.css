@@ -1,0 +1,58 @@
+.about-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10%;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title {
+  margin-top: 20px;
+  font-size: 1.3rem;
+}
+
+.occupation {
+  font-size: 1.2rem;
+  font-weight: lighter;
+}
+
+.description {
+  margin-top: 15px;
+}
+
+.wave {
+  animation-name: wave-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  }
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}

@@ -1,4 +1,4 @@
-import About from './components/AboutInfo/About'
+import About from './components/About/About'
 import Projects from './components/projects/Projects'
 
 function App() {
