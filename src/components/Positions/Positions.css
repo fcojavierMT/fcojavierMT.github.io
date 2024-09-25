@@ -67,11 +67,11 @@
 }
 
 .timeline-item:first-child::before {
-  top: 10%;
+  top: 8%;
 }
 
 .timeline-item:last-child::before {
-  height: 10%;
+  height: 8%;
 }
 
 .timeline-content {

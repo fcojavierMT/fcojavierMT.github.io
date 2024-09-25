@@ -7,7 +7,7 @@ const links = [
   {
     text: 'Linkedin',
     icon: BsLinkedin,
-    href: 'https://es.linkedin.com/in/francisco-javier-mart%C3%ADnez-talavera-ba3a00180',
+    href: 'https://www.linkedin.com/in/francisco-javier-mart%C3%ADnez-talavera-ba3a00180',
   },
   {
     text: 'Github',
